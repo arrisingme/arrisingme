@@ -12,7 +12,6 @@ elif 25 <= people <= 49:
     transport_costs = (budget * 0.40)
 else:
     transport_costs = (budget * 0.25)
-
 if category == "VIP":
     ticket_price = 499.99
 else:

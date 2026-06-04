@@ -1,16 +1,15 @@
-hour = int(input())
-minutes = int(input())
+number = int(input())
 
-new_minutes = minutes + 15
-
-if new_minutes > 59:
-    hour += 1
-    new_minutes -= 60
-
-if hour > 23:
-    hour = 0
-
-if new_minutes < 10:
-    print(f"{hour}:0{new_minutes}")
+if number <= 100:
+    bonus = 5
+elif 100 < number <= 1000:
+    bonus = (number * 0.20)
 else:
-    print(f"{hour}:{new_minutes}")
+    bonus = (number * 0.10)
+if number % 2 == 0:
+    bonus += 1
+if number % 10 == 5:
+    bonus += 2
+
+print(bonus)
+print(number + bonus)
